@@ -1,4 +1,4 @@
 #!/bin/bash
 cd ~
-echo "Changed working directory to: $(pwd)"
+echo "$(pwd)"
 
