@@ -1,4 +1,2 @@
 #!/bin/bash
-find . -type d -print0 | while read -d $'\0' dir; do
-chmod a+x "$dir"
-done
+chmod -R +111 */

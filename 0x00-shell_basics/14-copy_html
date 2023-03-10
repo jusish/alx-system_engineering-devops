@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in *.html; do if [ -f "../$file" ]; then if [ "$file" -nt "../$file" ]; then cp "$file" "../$file"; echo "Copied newer version of $file to parent directory."; else echo "$file already exists in parent directory, and is not newer."; fi; else cp "$file" "../$file"; echo "Copied $file to parent directory."; fi; done
+cp -un *.html ../
